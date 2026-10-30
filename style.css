@@ -1,0 +1,206 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff8f3;
+    color: #4a2c2a;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    color: #e76f8a;
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a2c2a;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e76f8a;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #ffe0e8, #fff0d9);
+}
+
+.welcome h1 {
+    font-size: 48px;
+    color: #9c405b;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #654747;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e76f8a;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #c94f70;
+    transform: scale(1.05);
+}
+
+/* Flavors Section */
+#flavors {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+#flavors h2 {
+    font-size: 35px;
+    color: #9c405b;
+    margin-bottom: 12px;
+}
+
+#flavors > p {
+    color: #876767;
+    margin-bottom: 40px;
+}
+
+/* Flavor Cards */
+.flavor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #f3a6b8;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(231,111,138,0.2);
+}
+
+.card h3 {
+    color: #9c405b;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.card strong {
+    color: #e76f8a;
+    font-size: 20px;
+}
+
+/* Location Section */
+.location {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe5eb;
+}
+
+.location h2 {
+    font-size: 32px;
+    color: #9c405b;
+    margin-bottom: 20px;
+}
+
+.location p {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #654747;
+}
+
+/* Footer */
+footer {
+    margin-top: 56px;
+    background-color: #4a2c2a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffb6c8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .welcome h1 {
+        font-size: 34px;
+    }
+
+    .flavor-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .flavor-list {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+}
